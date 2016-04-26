@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSP.Core", "CSP.Core\CSP.Core.csproj", "{0B957A73-86DB-4030-B56C-393F055AABDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSP.Cloud", "CSP.Cloud\CSP.Cloud.csproj", "{4053B10D-896B-417D-8B5E-88CA8E864A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSP.Client", "CSP.Client\CSP.Client.csproj", "{B5AF9B67-C0C0-4CCF-9B32-8E03BFBD537C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B957A73-86DB-4030-B56C-393F055AABDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B957A73-86DB-4030-B56C-393F055AABDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B957A73-86DB-4030-B56C-393F055AABDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B957A73-86DB-4030-B56C-393F055AABDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4053B10D-896B-417D-8B5E-88CA8E864A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4053B10D-896B-417D-8B5E-88CA8E864A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4053B10D-896B-417D-8B5E-88CA8E864A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4053B10D-896B-417D-8B5E-88CA8E864A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5AF9B67-C0C0-4CCF-9B32-8E03BFBD537C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AF9B67-C0C0-4CCF-9B32-8E03BFBD537C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AF9B67-C0C0-4CCF-9B32-8E03BFBD537C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AF9B67-C0C0-4CCF-9B32-8E03BFBD537C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
