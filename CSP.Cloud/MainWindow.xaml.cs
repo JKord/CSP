@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CSP.Core.Model.Part;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CSP.Cloud
 {
@@ -20,9 +9,34 @@ namespace CSP.Cloud
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Fields
+
+        ServerStatus serverStatus = ServerStatus.Stop;
+
+        #endregion
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        #region Evants Button Click
+
+        private void btnServer_Click(object sender, RoutedEventArgs e)
+        {
+            switch (serverStatus) {
+                case ServerStatus.Start: {
+                    serverStatus = ServerStatus.Stop;
+
+                } break;
+                case ServerStatus.Stop: {
+                    serverStatus = ServerStatus.Start;
+
+                } break;
+            }
+            btnServer.Content = serverStatus;
+        }
+
+        #endregion
     }
 }

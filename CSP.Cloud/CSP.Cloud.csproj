@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4053B10D-896B-417D-8B5E-88CA8E864A8F}</ProjectGuid>
+    <ProjectGuid>{1F2ED5E4-D53E-4DA5-9E9B-3A300E8E003A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CSP.Cloud</RootNamespace>
@@ -94,6 +94,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSP.Core\CSP.Core.csproj">
+      <Project>{6aa4bbd3-79c0-4d6e-b84c-fb1087ec454e}</Project>
+      <Name>CSP.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
