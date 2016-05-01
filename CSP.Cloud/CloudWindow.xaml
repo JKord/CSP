@@ -1,0 +1,41 @@
+﻿<Window x:Class="CSP.Cloud.CloudWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSP.Cloud"
+        mc:Ignorable="d" Style="{StaticResource VSWindowStyle}"
+        Title="Cloud" Width="620" Height="380" MinWidth="620" MinHeight="380">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tbConsole" Grid.Column="0" Margin="5,0" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True"/>
+        <StackPanel Grid.Column="1">
+            <GroupBox Header="Settings" Style="{StaticResource WindowGroupBoxStyle}">
+                <StackPanel Margin="3">
+                    <StackPanel.Resources>
+                        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource TextBoxWithLabelStyle}">
+                            <Setter Property="Margin" Value="0,0,0,5"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <TextBox x:Name="tbPort" Tag="Port" Text="1006"/>
+                    <Button Content="Start" Click="BtnServer_Click" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Commands" Style="{StaticResource WindowGroupBoxStyle}" Margin="0,5,0,00">
+                <StackPanel Margin="3">
+                    <StackPanel.Resources>
+                        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseButtonStyle}">
+                            <Setter Property="Margin" Value="0,0,0,5"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button Content="Server Info" Click="BtnServerInfo_Click" />
+                    <Button Content="Extended Info" Click="BtnExtendedInfo_Click" />
+                    <Button Content="Clean output" Click="BtnCleanOutput_Click" />
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>

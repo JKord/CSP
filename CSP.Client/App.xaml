@@ -2,11 +2,13 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:CSP.Client"
-             StartupUri="MainWindow.xaml">
+             StartupUri="ClientWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/CSP.Core;component/Theme/VSWindowStyle.xaml" />
+                <ResourceDictionary Source="/CSP.Core;component/Theme/Containers.xaml" />
+                <ResourceDictionary Source="/CSP.Core;component/Theme/InputTypes.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
